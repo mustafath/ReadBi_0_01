@@ -22,32 +22,38 @@ struct PDFOverviewView: View {
                         
                         .resizable()
                         .aspectRatio(contentMode: .fit)
-                        .frame(width: 50)
+                        .frame(width: 80)
                         .foregroundColor(.accentColor)
-                        .blur(radius: 30)
+                        .blur(radius: 40)
                     Spacer()
                         .frame(width: 30)
                     Text(pdfModel.title ?? "" )
+                        .font(.caption)
                     Spacer()
                 }.padding()
                 
-                RoundedRectangle(cornerRadius: 30)
+                RoundedRectangle(cornerRadius: 10)
                     
-                    .frame(height: 100)
-                    .background(.ultraThinMaterial,in: RoundedRectangle(cornerRadius: 30))
+                    .frame(height: 125)
                     .opacity(0.1)
+                    
+                    .background(VisualEffectView(effect: UIBlurEffect(style: .dark))
+                        .cornerRadius(10))
+                
+                    .foregroundColor(.white)
                 
                 HStack {
                     pdfModel.image?
 
                         .resizable()
                         .aspectRatio(contentMode: .fit)
-                        .frame(width: 50)
+                        .frame(width: 80)
                         .foregroundColor(.accentColor)
                         
                     Spacer()
                         .frame(width: 30)
                     Text(pdfModel.title ?? "" )
+                        .font(.caption)
                     Spacer()
                 }.padding()
             }
@@ -57,3 +63,15 @@ struct PDFOverviewView: View {
     }
 }
 
+
+struct VisualEffectView: UIViewRepresentable {
+    let effect: UIVisualEffect
+    
+    func makeUIView(context: Context) -> UIVisualEffectView {
+        return UIVisualEffectView(effect: effect)
+    }
+    
+    func updateUIView(_ uiView: UIVisualEffectView, context: Context) {
+        uiView.effect = effect
+    }
+}

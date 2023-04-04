@@ -16,6 +16,7 @@
 		932464D629D8A78E004AF0A3 /* PDFmodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932464D529D8A78E004AF0A3 /* PDFmodel.swift */; };
 		932464D829D8AB2F004AF0A3 /* PDFOverviewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932464D729D8AB2F004AF0A3 /* PDFOverviewViewModel.swift */; };
 		932464DC29D8B389004AF0A3 /* PDFOverviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932464DB29D8B389004AF0A3 /* PDFOverviewView.swift */; };
+		93A4A17729DA0DA3007E805B /* PDFInsideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A4A17629DA0DA3007E805B /* PDFInsideViewController.swift */; };
 		93BACC3D29D0787800F34E06 /* ReadBi_0_01App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BACC3C29D0787800F34E06 /* ReadBi_0_01App.swift */; };
 		93BACC3F29D0787800F34E06 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BACC3E29D0787800F34E06 /* ContentView.swift */; };
 		93BACC4129D0787A00F34E06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93BACC4029D0787A00F34E06 /* Assets.xcassets */; };
@@ -41,6 +42,7 @@
 		932464D529D8A78E004AF0A3 /* PDFmodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFmodel.swift; sourceTree = "<group>"; };
 		932464D729D8AB2F004AF0A3 /* PDFOverviewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFOverviewViewModel.swift; sourceTree = "<group>"; };
 		932464DB29D8B389004AF0A3 /* PDFOverviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFOverviewView.swift; sourceTree = "<group>"; };
+		93A4A17629DA0DA3007E805B /* PDFInsideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFInsideViewController.swift; sourceTree = "<group>"; };
 		93BACC3929D0787800F34E06 /* ReadBi_0_01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReadBi_0_01.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93BACC3C29D0787800F34E06 /* ReadBi_0_01App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadBi_0_01App.swift; sourceTree = "<group>"; };
 		93BACC3E29D0787800F34E06 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				93BACC3E29D0787800F34E06 /* ContentView.swift */,
+				93A4A17629DA0DA3007E805B /* PDFInsideViewController.swift */,
 				932464D429D8A773004AF0A3 /* PDFDisplay */,
 			);
 			path = Home;
@@ -255,6 +258,7 @@
 				93BACC3F29D0787800F34E06 /* ContentView.swift in Sources */,
 				932464D629D8A78E004AF0A3 /* PDFmodel.swift in Sources */,
 				932464D829D8AB2F004AF0A3 /* PDFOverviewViewModel.swift in Sources */,
+				93A4A17729DA0DA3007E805B /* PDFInsideViewController.swift in Sources */,
 				931FA99029D5AB2D004E4E40 /* APIConstants.swift in Sources */,
 				931FA98E29D5A7F2004E4E40 /* TranslatedTextViewModifier.swift in Sources */,
 				93BACC9E29D372C800F34E06 /* TranslationDataService.swift in Sources */,
