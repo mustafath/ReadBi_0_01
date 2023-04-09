@@ -31,13 +31,14 @@ struct PDFOverviewView: View {
                         .font(.caption)
                     Spacer()
                 }.padding()
+                    .frame(height: .infinity)
                 
                 RoundedRectangle(cornerRadius: 10)
                     
                     .frame(height: 125)
                     .opacity(0.1)
                     
-                    .background(VisualEffectView(effect: UIBlurEffect(style: .dark))
+                    .background(VisualEffectView(effect: UIBlurEffect(style: .light))
                         .cornerRadius(10))
                 
                     .foregroundColor(.white)
@@ -62,6 +63,7 @@ struct PDFOverviewView: View {
         
     }
 }
+
 
 
 struct VisualEffectView: UIViewRepresentable {

@@ -11,7 +11,7 @@ import SwiftUI
 struct ReadBi_0_01App: App {
     var body: some Scene {
         WindowGroup {
-            ContentView().preferredColorScheme(.dark)
+            ContentView().preferredColorScheme(.light)
         }
     }
 }
