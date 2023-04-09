@@ -10,7 +10,7 @@ import Foundation
 
 struct TranslationBoxConstants {
     
-    static let textColor = Color.white
+    static let textColor = Color.black
     static let textFont = Font.caption
     static let textAlignment = TextAlignment.center
     static let minFrameWidth: CGFloat = 70

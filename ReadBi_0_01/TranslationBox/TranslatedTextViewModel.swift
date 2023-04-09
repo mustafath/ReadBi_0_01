@@ -38,6 +38,7 @@ class TranslateTextViewModel : ObservableObject {
                 if let pdfView = notification.object as? PDFView {
                     
                     let selection = pdfView.currentSelection
+                    if (selection?.string?.count ?? 0 > 240) {return}
                     self.translationService.getTranslation(text: selection?.string ?? "")
                     self.selectedString = self.translationService.translation
                     self.isTranslating = self.translationService.isTranslating
